@@ -1,0 +1,56 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer__red {
+  height: 70px;
+  width: 100%;
+  background-color: #fe1936;
+  position: relative;
+}
+
+.footer__by {
+  position: absolute;
+  color: white;
+  bottom: 2px;
+  right: 5px;
+}
+
+@media screen and (max-width: 568px) {
+  .footer__by {
+    font-size: 10px;
+  }
+}
+
+.footer__black {
+  height: 50px;
+  width: 100%;
+  background-color: #0c0c0c;
+  position: relative;
+}
+.footer__pokeball {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  top: -40px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 10px solid #0c0c0c;
+  width: 90px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+.footer__pokeball::after {
+  content: "";
+  width: 45px;
+  height: 45px;
+  display: block;
+  background-color: rgba(33, 33, 33, 1);
+  border: 10px solid #0c0c0c;
+  border-radius: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
